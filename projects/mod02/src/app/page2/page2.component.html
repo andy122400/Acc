@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let item of items;let i=index">
+    {{i+1}}:{{item}}
+    <!-- <input [(ngModel)]="items" placeholder="輸入文本"> -->
+  </li>
+</ul>
+{{items}}
+
+
+
+<div>
+  <h2>Angular 雙向綁定範例</h2>
+  <input [(ngModel)]="inputText" placeholder="輸入文本" />
+  <p>你輸入的文本是：{{ inputText }}</p>
+</div>

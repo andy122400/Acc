@@ -1,0 +1,31 @@
+<p>page1 works!</p>
+
+
+
+<div *ngFor="let item of Mydata">
+  <ng-container [ngSwitch]="item.type">
+    <div *ngSwitchCase="'Text'">
+      <label>{{ item.name }}:</label>
+      <input type="text" [(ngModel)]="item.value" disabled/>
+    </div>
+    <div *ngSwitchCase="'inputbox'">
+      <label>{{ item.name }}:</label>
+      <input type="text" [(ngModel)]="item.value" />
+    </div>
+    <div *ngSwitchCase="'Date'">
+      <label>{{ item.name }}:</label>
+      {{ item.value | date:'yyyy/MM/dd'}}
+      <input type="date" [(ngModel)]="item.value" />
+
+    </div>
+    <!-- Add more cases for other types if needed -->
+    <div *ngSwitchDefault>
+      <label>{{ item.name }}</label>
+      <input type="text" [(ngModel)]="item.value" />
+    </div>
+  </ng-container>
+</div>
+<div>
+  <h2>Mydata 數據</h2>
+  <pre>{{ Mydata | json }}</pre>
+</div>

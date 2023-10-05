@@ -1,0 +1,16 @@
+{
+  "posts": [{"name":"名稱","type":"Text","value":"Andy 15"},
+  {"name":"表單類型","type":"inputbox","value":"Andy plus"},
+  {"name":"今天日期","type":"Date","value":"2023/10/10"}
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,10 @@
+<!-- <app-page1></app-page1> -->
+
+<ul>
+<li *ngFor="let r of routes">
+  <a [routerLink]="[r.path]">{{r.title}}</a>
+</li>
+
+</ul>
+
+<router-outlet></router-outlet>
