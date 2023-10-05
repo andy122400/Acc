@@ -16,7 +16,7 @@ import { HttpClient } from '@angular/common/http';
 export class Page1Component {
 constructor(private conToAPI: MyServiceService){}
 
-  items=["Andy","Bat","Cat"]
+
   Mydata: MyInterface[]=[];
 ngOnInit(): void {
   this.conToAPI.getData().subscribe(
@@ -29,7 +29,7 @@ ngOnInit(): void {
 
     // Mydata:any =this.;
 
-  inputText: string = 'Hello, Angular!22';
+
 
 
 }
